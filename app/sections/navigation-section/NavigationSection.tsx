@@ -16,7 +16,7 @@ export default function NavigationSection(){
 
 
     return(
-        <header className="sticky top-0 z-10 border-b  backdrop-blur-md bg-background-secondary">
+        <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur-sm">
             <div className="container mx-auto py-5 flex flex-col gap-y-4 md:flex-row justify-between items-center ">
                 <div className="flex flex-col items-center">
                     <Link href={"#"} className={`text-4xl font-bold ${STYLE_EFFECTS_BUTTON}`}>
