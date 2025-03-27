@@ -7,16 +7,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 @theme {
-  --color-background-primary:#ffffff ;
-  --color-background-secondary:#f5f5f5 ;
+  --color-background-primary: #f8f8f8;
+  --color-background-secondary: #eaeaea;
 
-  --color-bg-primary:#2a6edd ;
-  --color-bg-primary-hover:#1a5ec7 ;
-  --color-bg-primary-active:#0a4eb0 ;
+  --color-bg-primary: #111111;               
+  --color-bg-primary-hover: #252525;         
+  --color-bg-primary-active: #3a3a3a;     
 
-  --color-bg-secondary:#e0e0e0 ;
-  --color-bg-secondary-hover:#d0d0d0 ;
-  --color-bg-secondary-active:#c0c0c0 ;
+  --color-bg-secondary: #d8d8d8;
+  --color-bg-secondary-hover: #c8c8c8;
+  --color-bg-secondary-active: #b8b8b8;
 }
