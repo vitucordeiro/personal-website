@@ -10,6 +10,7 @@ body {
 @theme {
   --color-background-primary: #f8f8f8;
   --color-background-secondary: #eaeaea;
+  --color-background-gray:#EFEFEF;
 
   --color-bg-primary: #111111;               
   --color-bg-primary-hover: #252525;         
