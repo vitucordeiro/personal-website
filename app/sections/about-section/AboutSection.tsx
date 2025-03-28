@@ -14,7 +14,7 @@ export default function AboutSection(){
                         I’m deepening my knowledge in Algorithms and Data Structures to enhance problem-solving and code optimization skills.
                     </p>
                     <p>
-                        I thrive in collaborative and challenging environments that foster continuous learning and professional growth. 
+                        I want to thrive in collaborative and challenging environments that foster continuous learning and professional growth. 
                         Passionate about building efficient and scalable systems, I aim to contribute to innovative projects that make a real impact.
                     </p>
                 </div>
