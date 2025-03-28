@@ -24,12 +24,13 @@ export default function HeroSection(){
     
         <div className="hidden md:flex md:items-center md:justify-center ">                    
             <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/profile.jpeg"
                 alt=""
                 width={450}
                 height={450}
-                className="object-cover ring-1 rounded-full"
+                className="object-cover rounded-full hover:blur-xs transition-all duration-300 shadow-lg shadow-bg-primary/50"
                 priority
+                quality={100}
             />            
         </div>
     </section>
