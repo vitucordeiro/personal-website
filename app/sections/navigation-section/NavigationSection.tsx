@@ -17,13 +17,13 @@ export default function NavigationSection(){
 
     return(
         <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur-sm">
-            <div className="container mx-auto py-5 flex flex-col gap-y-4 md:flex-row justify-between items-center ">
+            <div className="container mx-auto py-3 flex flex-col md:flex-row max-2xl:px-2 max-w-7xl justify-between items-center ">
                 <div className="flex flex-col items-center">
-                    <Link href={"#"} className={`text-4xl font-bold ${STYLE_EFFECTS_BUTTON}`}>
+                    <Link href={"#"} className={`text-3xl font-bold ${STYLE_EFFECTS_BUTTON}`}>
                         <span >Victor Cordeiro</span>
                     </Link>
                 </div>
-                <div className="hidden md:flex font-medium flex-row space-x-5 text-lg">
+                <div className="hidden md:flex font-medium flex-row space-x-5 text-sm">
                     <Link href={"#about"}>
                         <span className={`${STYLE_EFFECTS_BUTTON}`}>About</span>  
                     </Link>
@@ -36,7 +36,7 @@ export default function NavigationSection(){
                 </div>
                 <div>
                     <button 
-                        className={`max-md:hidden font-semibold px-22 border-2 rounded-md border-bg-primary  active:border-bg-primary-active md:px-4 py-1 ${STYLE_EFFECTS_BUTTON}`}
+                        className={`max-md:hidden font-semibold px-18 border-1 rounded-md border-bg-primary  active:border-bg-primary-active md:px-4 py-1 ${STYLE_EFFECTS_BUTTON}`}
                         >Get in touch
                     </button>
                 </div>
