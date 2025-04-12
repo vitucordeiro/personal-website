@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: ["victorcordeiro.devops@gmail.com"],
+      to: [`${process.env.EMAIL_TO}`],
       subject: subject,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eaeaea; border-radius: 8px; background-color: #f9f9f9;">
