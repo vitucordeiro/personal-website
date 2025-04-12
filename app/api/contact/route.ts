@@ -1,11 +1,24 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { LRUCache as LRU } from 'lru-cache'; 'lru-cache';
 
 const resend = new Resend(process.env.API_KEY_RESEND);
+
+const rateLimit = new LRU<string, number>({
+  max: 100,
+  ttl: 60 * 1000,
+});
 
 export async function POST(request: Request) {
   try {
     const { email, subject, message } = await request.json();
+
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('remote-addr') || 'unkown';
+    const requestCount = rateLimit.get(ip) || 0;
+    if (requestCount >= 2) {
+      return NextResponse.json({ status: 429, message: "Too many requests" });
+    }
+    rateLimit.set(ip, requestCount + 1);
 
     await resend.emails.send({
       from: 'onboarding@resend.dev',
