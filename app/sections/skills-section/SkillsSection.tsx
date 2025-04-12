@@ -1,7 +1,7 @@
 export default function SKillsSection(){
     return(
-        <div className="border-t border-bg-primary-active bg-background-primary">
-            
+        <div id="skills&technologies" className="border-t-gray-500/15 border-t-1 bg-background-primary">
+
             <section className="container  max-w-4xl mx-auto py-20 ">
                 <h2 className="font-bold text-2xl md:text-3xl text-center tracking-tight"> Skills & Technologies</h2>
                 {/* structure cards */}
@@ -12,7 +12,7 @@ export default function SKillsSection(){
                         <ul className="grid grid-cols-2 gap-2">
                             <li className="flex items-center gap-2">
                                 <div className="rounded-full h-1 w-1 bg-bg-primary"/>
-                                Javascript 
+                                Javascript
                             </li>
                             <li className="flex items-center gap-2">
                                 <div className="rounded-full h-1 w-1 bg-bg-primary"/>
@@ -100,7 +100,7 @@ export default function SKillsSection(){
                             </li>
                             <li className="flex items-center gap-2">
                                 <div className="rounded-full h-1 w-1 bg-bg-primary"/>
-                                AWS 
+                                AWS
                             </li>
                         </ul>
                     </div>
